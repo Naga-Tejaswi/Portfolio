@@ -1,6 +1,7 @@
 import { ArrowRight, Briefcase, GitBranch, Globe, Mail } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { personal, socialLinks } from '../data/portfolio'
+import portfolioImage from '../../portfolio.png'
 
 const socialIcons = {
   linkedin: Globe,
@@ -80,7 +81,7 @@ export function Hero() {
         >
           <div className="hero-image-wrapper relative w-full max-w-[620px] overflow-hidden rounded-[24px]">
             <img
-              src="/portfolio.png"
+              src={portfolioImage}
               alt="Portfolio illustration"
               className="block h-auto w-full object-contain object-center"
             />
